@@ -1,25 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
-
+import React from 'react'
+import Header from "./Components/Header"
+import {BrowserRouter,Routes,Route} from "react-router-dom"
+import  Container  from "./Components/Topcontainer"
+import Topcontainer from './Components/Topcontainer'
+import Skillcontainer from './Components/Skillcontainer'
+import Project from './Components/Project/Projects'
+import Projectcontainer from './Components/Projectcontainer'
+import Experiencecontainer from './Components/Experiencecontainer'
+import Contact from "./Components/Contact"
+import Experience from './Components/Experience'
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div><Header/>
+    <Topcontainer/>
+    <Skillcontainer/>
+    <Projectcontainer/>
+    <Experiencecontainer/>
+    <Contact/>
+    <Routes>
+      <Route path="/" element={<about/>}/>
+      <Route path="/" element={<skills/>}/>
+      <Route path="/" element={<projects/>}/>
+      <Route path="/" element={<experience/>}/>
+      <Route path="/" element={<contact/>}/>
+    </Routes>
+
+    
     </div>
   );
-}
+};
 
 export default App;

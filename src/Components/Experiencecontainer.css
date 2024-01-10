@@ -1,0 +1,38 @@
+.experience{
+    display:flex;
+    flex-direction: column; 
+    border:2px dotted white;
+    border-radius: 10px;
+    width:200px;
+    height:150px;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    overflow:hidden;
+ 
+ }
+ .experiancecontainer{
+    display:flex;
+    flex-direction:column;
+    color:white;
+    justify-content:center;
+    margin:200px 0;
+    align-items:center;
+
+
+ }
+ .experiancecontainer>h1{
+    padding-bottom: 20px;
+ }
+ .experiencecontainer__info{
+    background:url("../assests/17.jpg");
+    background-position: center;
+    background-size:cover;
+    height:330px;
+    z-index:1000px;
+    width:80vw;
+    box-shadow:insert 0 0 0 2000px rgba(0,0,0,0.9);
+    display:flex;
+    justify-content:space-evenly;
+    align-items:center;
+ }
